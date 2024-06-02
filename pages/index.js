@@ -64,15 +64,15 @@ const Home = () => {
             boundaries of possibility. Together, we craft solutions that
             inspire, driven by our passion to shape a future without limits.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative mt-0 pt-0">
+          {/* <div className="flex justify-center xl:hidden relative mt-0 pt-0">
             <ProjectsBtnn />
-          </div>
+          </div> */}
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex pb-4"
+            className=" xl:flex pb-4"
           >
             <ProjectsBtn />
           </motion.div>

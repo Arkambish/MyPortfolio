@@ -6,23 +6,21 @@ import { fadeIn } from "../variants";
 
 const ProjectsBtn = () => {
   return (
-    <>
-      <div className="mx-auto xl:mx-0  xl:block">
-        <Link
-          href="/work"
-          className="relative w-[140px] h-[140px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group  "
-        >
-          <Image
-            src={"/rounded-text.png"}
-            width={141}
-            height={148}
-            alt=""
-            className="animate-spin-slow w-full h-full max-w-[115px] max-h-[122px]  "
-          />
-          <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
-        </Link>
-      </div>
-    </>
+    <div className="flex justify-center items-center h-full">
+      <Link
+        href="/work"
+        className="z-10 cursor-pointer pointer-events-auto relative w-[140px] h-[140px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
+      >
+        <Image
+          src="/rounded-text.png"
+          width={141}
+          height={148}
+          alt=""
+          className="animate-spin-slow w-full h-full max-w-[115px] max-h-[122px]"
+        />
+        <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
+      </Link>
+    </div>
   );
 };
 
