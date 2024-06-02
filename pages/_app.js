@@ -1,9 +1,10 @@
 import { useRouter } from "next/router";
-import Layout from "../components/Layout";
+import Layout from "./layout.tsx";
 import Transition from "../components/Transition";
 
 import "../styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
+import react from "react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
